@@ -16,7 +16,7 @@ Tensorflow architecture works in three parts:
 
 Tensor
 
-![Tensor PDF]("./Tensors_TM2002211716.pdf")
+![Tensor PDF](Tensors_TM2002211716.pdf)
 
 > Tensorflow's name is directly derived from its core framework: Tensor. In Tensorflow, all the computations involve tensors. A tensor is a vector or matrix of n-dimensions that represents all types of data. All values in a tensor hold identical data type with a known (or partially known) shape. The shape of the data is the dimensionality of the matrix or array.
 >
