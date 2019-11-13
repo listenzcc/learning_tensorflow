@@ -6,7 +6,7 @@
 
 <img src="logo.png" alt="TensorFlow LOGO" width="20%" align="left" hspace="20" vspace="5">
 
-> [TensorFlow](https://tensorflow.google.cn/guide) is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
+> [TensorFlow](https://tensorflow.google.cn/guide) ([github](https://github.com/tensorflow/tensorflow)) is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
 
 Tensorflow architecture works in three parts:  
 
@@ -16,8 +16,7 @@ Tensorflow architecture works in three parts:
 
 ### Componnets of TensorFlow
 
-Tensor
-
+What is tensor, can be found in following pdf.  
 ![Tensor PDF](Tensors_TM2002211716.pdf)
 
 > Tensorflow's name is directly derived from its core framework: Tensor. In Tensorflow, all the computations involve tensors. A tensor is a vector or matrix of n-dimensions that represents all types of data. All values in a tensor hold identical data type with a known (or partially known) shape. The shape of the data is the dimensionality of the matrix or array.
@@ -35,6 +34,23 @@ Graphs
 > - All the computations in the graph are done by connecting tensors together
 >   - A tensor has a node and an edge. The node carries the mathematical operation and produces an endpoints outputs. The edges the edges explain the input/output relationships between nodes.
 
+***
+
+## Tensorflow with python
+
+A large number of Tensorflow 2 python scripts require [Keras](https://keras.io/), a python ML library.
+
+> <img src="keras-logo.png" alt="keral-logo" height="50" vspace="5" align="left">
+> Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
+>
+> Use Keras if you need a deep learning library that:
+>
+> - Allows for easy and fast prototyping (through user friendliness, modularity, and extensibility).
+> - Supports both convolutional networks and recurrent networks, as well as combinations of the two.
+> - Runs seamlessly on CPU and GPU.
+>
+> Read the documentation at Keras.io.  
+> Keras is compatible with: Python 2.7-3.6.
 ***
 
 ## Quick start example
