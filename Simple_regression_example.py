@@ -12,7 +12,7 @@ class Linear(tf.keras.Model):
   def call(self, inputs):
     return tf.matmul(self.W, inputs) + self.b
 
-# A toy dataset of points around 3 * x + 2
+# A toy dataset of points around W * x + b
 NUM_EXAMPLES = 2000
 training_inputs = tf.random.normal([3, NUM_EXAMPLES])
 noise = tf.random.normal([NUM_EXAMPLES])
