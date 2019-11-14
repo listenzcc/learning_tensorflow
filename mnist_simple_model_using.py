@@ -52,5 +52,5 @@ plt.tight_layout()
 
 
 # %%
-
+keras.utils.plot_model(model, show_shapes=True, to_file='mnist_simple_model.png')
 
