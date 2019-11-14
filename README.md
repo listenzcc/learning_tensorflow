@@ -222,6 +222,8 @@ Examples of how to `build` a simple three-layer network to discriminate digits i
 - [mnist_simple_model_using.py](mnist_simple_model_using.py) shows how to load and use it.
 - [mnist_simple_model.h5](mnist_simple_model.h5) is the restored model.
 
+<img src="mnist_simple_model.png" alt="mnist_simple_model" height="400"> 
+
 ### Training the model
 
     # %%
@@ -329,3 +331,6 @@ Examples of how to `build` a simple three-layer network to discriminate digits i
         plt.imshow(x.reshape(28, 28), cmap='gray', interpolation='none')
         plt.title("Guess {} of {}".format(cls[0], y))
     plt.tight_layout()
+
+    # %%
+    keras.utils.plot_model(model, show_shapes=True, to_file='mnist_simple_model.png')
