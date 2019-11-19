@@ -13,7 +13,7 @@ num_classes = 10
 epochs = 100
 
 # %%
-model_dir, model_name = os.getcwd(), 'cifar10_simple_mode.h5'
+model_dir, model_name = os.getcwd(), 'cifar10_simple_model.h5'
 model = keras.models.load_model(os.path.join(model_dir, model_name))
 model
 
@@ -43,18 +43,16 @@ print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
 # %%
-help(model.predict_proba)
-
-# %%
 classes = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 plt.style.use('seaborn-dark')
+
 for _ in range(3):
+    fig = plt.figure(figsize=(6, 3))
     j = random.choice(range(len(X_test)))
     x = X_test[j]
     y = y_test[j]
     c = model.predict_proba(x[np.newaxis, :])[0]
     x = ((x + X_train_mean) * 255).astype(np.uint32)
-    fig = plt.figure(figsize=(6, 3))
     axes = fig.subplots(1, 2)
     axes[0].imshow(x, interpolation='bilinear')
     axes[0].set_title("True: {} Guess: {}".format(np.argmax(y), np.argmax(c)))
@@ -64,5 +62,13 @@ for _ in range(3):
 
 # %%
 keras.utils.plot_model(model, show_shapes=True, show_layer_names=True)
+
+# %%
+for j, layer in enumerate(model.layers):
+    print(j, layer.name)
+    weights = layer.get_weights()
+    if weights:
+        print(' ', weights[0].shape)
+    print('')
 
 # %%
