@@ -51,6 +51,27 @@ A large number of Tensorflow 2 python scripts require [Keras](https://keras.io/)
 >
 > Read the documentation at Keras.io.  
 > Keras is compatible with: Python 2.7-3.6.
+
+***
+
+## Cifar 10 examples
+
+Three simple models using cifar10 dataset.
+
+- cifar10_simple  
+A simple CNN model, nothing special.
+After 40 epochs training, accuracy is 80%.
+
+- cifar10_resnet  
+A resnet CNN model.  
+After 40 epochs training, accuracy is 89%.
+
+- cifar10_resnet_noshortcut  
+A simple CNN model same as cifar10_resnet, but with no shortcut path.  
+After 40 epochs training, accuracy is 82%.
+
+<img src="keras_models/acc.svg">
+
 ***
 
 ## Quick start example

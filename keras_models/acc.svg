@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg">
+
+
+<text x="20" y="20"> simple </text>
+<rect x="80" y="5" width="80" height="20" style="fill:blue; opacity:0.5"/>
+<text x="100" y="20"> 80% </text>
+
+<text x="20" y="50"> resnos </text>
+<rect x="80" y="35" width="82" height="20" style="fill:blue; opacity:0.5"/>
+<text x="100" y="50"> 82% </text>
+
+<text x="20" y="80"> resnet </text>
+<rect x="80" y="65" width="89" height="20" style="fill:blue; opacity:0.5"/>
+<text x="100" y="80"> 89% </text>
+
+</svg>
